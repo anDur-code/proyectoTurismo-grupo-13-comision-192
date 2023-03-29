@@ -85,3 +85,146 @@ nav a{
     display: flex;
     justify-content: center;    
 }
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap');
+
+* {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+}
+
+body {
+    text-transform: capitalize;
+}
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+.footer {
+    background-color: #207cce;
+    padding: 80px;
+}
+.footer-row {
+    display: flex;
+    flex-wrap: wrap;
+}
+.footerNos {
+    width: 25%;
+    padding: 0 15px;
+}
+.footerCont {
+    width: 25%;
+    padding: 0 15px;
+
+}
+.footerLink {
+    width: 25%;
+    padding: 0 15px;
+
+}
+
+.footerNos h3 {
+    font-size: 20px;
+    color: #0c0727;
+    margin-bottom: 25px;
+    font-weight: 500;
+    border-bottom: 2px solid #143484;
+    padding-bottom: 10px;
+    display: inline-block;
+
+}
+.footerCont h3 {
+    font-size: 20px;
+    color: #0c0727;
+    margin-bottom: 25px;
+    font-weight: 500;
+    border-bottom: 2px solid #143484;
+    padding-bottom: 10px;
+    display: inline-block;
+
+}
+.footerLink h3 {
+    font-size: 20px;
+    color: #0c0727;
+    margin-bottom: 25px;
+    font-weight: 500;
+    border-bottom: 2px solid #143484;
+    padding-bottom: 10px;
+    display: inline-block;
+
+}
+.footerNos ul li {
+    font-size: 18px;
+    text-decoration: none;
+    color: #d4d4ac;
+    display: block;
+    margin-bottom: 15px;
+    transition: all  .3s ease;
+}
+.footerNos ul li:hover {
+    color: aliceblue;
+    padding-left: 6px;
+}
+.footerLink ul li a {
+    font-size: 18px;
+    text-decoration: none;
+    color: #d4d4ac;
+    display: block;
+    margin-bottom: 15px;
+    transition: all  .3s ease;
+}
+.sTitle {
+    font-size: 18px;
+    margin-bottom: 15px;
+    color: #1c172b;
+}
+
+.sang {
+    font-size: 18px;
+    text-decoration: none;
+    color: #d4d4ac;
+    display: block;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    transition: all  .3s ease;
+}
+.sang:hover {
+    color: aliceblue;
+    padding-left: 6px;
+}
+
+.footerLink ul li a:hover {
+    color: aliceblue;
+    padding-left: 6px;
+}
+.socialLink h3 {
+    margin-bottom: 15px;
+}
+.socialLink a {
+    display: inline-block;
+    min-height: 40px;
+    width: 40px;
+    background-color: rgba(255, 255, 255, 0.2);
+    margin: 0 10px 10px 0;
+    text-align: center;
+    line-height: 40px;
+    border-radius: 50%;
+    color: #ffffff;
+    transition: all .5s ease;
+
+}
+.socialLink a:hover {
+    background-color: #06243d;
+}
+@media(max-width:991px){
+    .footer-row {
+        text-align: center;
+    }
+    .footer-link {
+        width: 100%;
+        margin-bottom: 30px;
+    }
+}
