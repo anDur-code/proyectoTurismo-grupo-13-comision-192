@@ -4,107 +4,114 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>treceTour</title>    
-    <link rel="stylesheet" href="./css/styles.css"
+    <title>Grupo Mundo Viajes</title>
+    <link rel="stylesheet" href="./css/style.css"
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
+
 </head>
-<body>
-    <header>   
+<body><
+    <header>
+        <img src="./img/image/logo-sin-fondo-negro.png" alt="No se pudo cargar la imagen del logo de la empresa de turismo treceTour." height="70rem">
+        
+                
         <nav>
-            <img src="./img/image/logo viajes y turismo.png" alt="No se pudo cargar la imagen del logo de la empresa de turismo treceTour." height="70%">
-            <a href=""><i class="bi bi-bounding-box"></i>Inicio</a>
-            <a href=""><i class="bi bi-bounding-box"></i>¿Quénes somos?</a>
-            <a href="">Nuestros viajes</a>
-            <a href="">Contáctanos</a>
-            <a href=""> <i class="bi bi-list"></i></a>
-            <a href=""><i class="bi bi-search"></i></a>  
-        </nav>        
+            <a href="" class="nav-link">Historia</a>
+            <a href="" class="nav-link">Quienes Somos?</a>
+            <a href="" class="nav-link">Contactanos</a>
+        </nav>
+        <button class="btn-menu">
+            <i class="bi bi-list"></i>
+        </button>
     </header>
-    <main>
-        <section class="selection">
-            
+    <main>          
+        <section id="contenedor" class="containerPackTour>
+            <section class="headerPacksTour">            
+                <section id="promoPackTour" class="promoPackTour"></section>
+                <h2>PAQUETES TURÍSTICOS IMPERDIBLES!!!!</h2>
+                <div id="container-flex" class="container-flex">
+                    
+                </div>
+            </section>
         </section>
-        <h2>Paquetes Turísticos</h2>
-        <section class="container-flex">          
-            <div class="cardPromo">
-                <div class="part-1">                    
-                    <img src="https://i.pinimg.com/originals/d3/e5/29/d3e529aa67ffb6897edc7def8cde3ba0.png" alt="foto del glaciar Perito Moreno" height="85%">
-                </div>  
-                <div class="part-2">
-                    <h3>descripción</h3>
-                </div>
-                <div class="part-3">
-                    <h3>PROMO 1</h3>
-                </div>                
-            </div>
-            <div class="cardPromo">
-                <h3>PROMO 1</h3>
-            </div>
-            <div class="cardPromo">
-                <h3>PROMO 1</h3>
-            </div>
-            <div class="cardPromo">
-                <h3>PROMO 1</h3>
-            </div>
-            <div class="cardPromo">
-                <h3>PROMO 1</h3>
-            </div>
-            <div class="cardPromo">
-                <h3>PROMO 1</h3>
-            </div>
-            <div class="cardPromo">
-                <h3>PROMO 1</h3>
-            </div>           
-        </section>        
-    </main>
-    <footer>
-        <footer class="footer">
-            <div class="container">
-                <div class="footer-row">
-                    <div class="footerNos">
-                        <h3>Sobre nosotros</h3>
-                        <ul>
-                            <li>DURAN Andrea</li>
-                            <li>GARRO Marcelo</li>
-                            <li>LEIVA Mariano</li>
-                            <li>RODRIGUEZ Paula</li>
-                            <li>VARELA Anabel</li>
-                            <li>ZAVALA Pablo</li>
-                        </ul>
-                    </div>
-                    <div class="footerCont">
-                            <h3>Contactanos</h3>
-                            <ul>
-                                <h4 class="sTitle">Nuestros telefonos</h4> 
-                                    <li class="sang">+54 261 738 4567</li>
-                                    <li class="sang">+54 262 764 9836</li>
-                                <h4 class="sTitle">Via email</h4>
-                                        <label for="email"></label>
-                                        <input type="email" id="email" placeholder="ejemplo@ejemplo.com">
-                                        <input type="submit" value="Enviar">
-                            </ul>
-                    </div>
-                    <div class="footerLink">
-                        <h3>Links externos</h3>
-                        <ul>
-                            <li><a href="https://www.assistcard.com/ar" target="_blank">Seguros</a></li>
-                            <li><a href="https://www.hertz.com.ar/" target="_blank">Alquileres de autos</a></li>
-                            <li><a href="https://latiendadelviajero.com.ar/" target="_blank">Todo para el viajero</a></li>
-                        </ul>
-                    </div>
-                    <div class="socialLink">
-                        <h3>Siguenos por nuestras redes</h3>
-                      <div class="social-link">
-                        <a href="https://facebook.com/" class="fab fa-facebook-f" target="_blank"></a>
-                        <a href="https://www.instagram.com/" class="fab fa-instagram" target="_blank"></a>
-                        <a href="https://twitter.com/?lang=es" class="fab fa-twitter" target="_blank"></a>
-                        <a href="https://www.linkedin.com/login/es" class="fab fa-linkedin" target="_blank"></a>
+        
     
-                      </div>
-                    </div>
+        <section class="formRegisterUsers">
+          <h1>Registro de usuarios</h1>
+            <form class="formUsers">
+                <div class="inputContainer">
+                    <label for="nombre">Ingrese su nombre</label>
+                    <input type="text" placeholder="Ingrese su nombre" id="nombre" name="nombre">
+                </div>
+                <div class="inputContainer">
+                    <label for="email">Ingrese su mail</label>
+                    <input type="text" placeholder="Ingrese su mail" id="email" name="email">
+                </div>
+                <div class="inputContainer">
+                    <label for="contrasena">Ingrese su contraseña</label>
+                    <input type="text" placeholder="Ingrese su contraseña" id="contrasena" name="contrasena">
+                </div>
+                <div class="inputContainer">
+                    <label for="provincia">Seleccione su provincia</label>
+                    <select name="provincia" id="provincia" name="provincia">
+                        <option value="Buenos Aires">Buenos Aires</option>
+                        <option value="Santa Cruz">Santa Cruz</option>
+                        <option value="Cordoba">Cordoba</option>
+                        <option value="Mendoza">Mendoza</option>
+                    </select>
+                </div>
+                <input type="submit" value="Registrar" class="btn-register">
+            </form> 
+            <div id="contanerUsers" class="contanerUsers"></div>
+        </section >
+    </main>
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-row">
+                <div class="footerNos">
+                    <h3>Sobre nosotros</h3>
+                    <ul>
+                        <li>DURAN Andrea</li>
+                        <li>GARRO Marcelo</li>
+                        <li>LEIVA Mariano</li>
+                        <li>RODRIGUEZ Paula</li>
+                        <li>VARELA Anabel</li>
+                        <li>ZAVALA Pablo</li>
+                    </ul>
+                </div>
+                <div class="footerCont">
+                        <h3>Contactanos</h3>
+                        <ul>
+                            <h4 class="sTitle">Nuestros telefonos</h4> 
+                                <li class="sang">+54 261 738 4567</li>
+                                <li class="sang">+54 262 764 9836</li>
+                            <h4 class="sTitle">Via email</h4>
+                                    <label for="email"></label>
+                                    <input type="email" id="email" placeholder="ejemplo@ejemplo.com">
+                                    <input type="submit" value="Enviar">
+                        </ul>
+                </div>
+                <div class="footerLink">
+                    <h3>Links externos</h3>
+                    <ul>
+                        <li><a href="https://www.assistcard.com/ar" target="_blank">Seguros</a></li>
+                        <li><a href="https://www.hertz.com.ar/" target="_blank">Alquileres de autos</a></li>
+                        <li><a href="https://latiendadelviajero.com.ar/" target="_blank">Todo para el viajero</a></li>
+                    </ul>
+                </div>
+                <div class="socialLink">
+                    <h3>Siguenos por nuestras redes</h3>
+                  <div class="social-link">
+                    <a href="https://facebook.com/" class="fab fa-facebook-f" target="_blank"></a>
+                    <a href="https://www.instagram.com/" class="fab fa-instagram" target="_blank"></a>
+                    <a href="https://twitter.com/?lang=es" class="fab fa-twitter" target="_blank"></a>
+                    <a href="https://www.linkedin.com/login/es" class="fab fa-linkedin" target="_blank"></a>
+
+                  </div>
                 </div>
             </div>
-        </footer>
+        </div>
     </footer>
+    <script src="./js/script.js"></script>
+    <p>Argentina Programa C192 - grupo 13 ®Todos los derechos reservados</p>
 </body>
 </html>

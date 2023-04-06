@@ -1,0 +1,309 @@
+/*.color1 { #207cce };
+.color2 { #e6daa9 };
+.color3 { #143484 };
+.color4 { #a09c5c };
+.color5 { #d4d4ac };*/
+:root{
+    --azul-cielo:  #207cce;
+    --dorado: #a09c5c;
+    --color2:#e6daa9;
+    --azul-oscuro: #143484;
+    --el-mas-claro: #d4d4ac;
+    --lila-fuerte:#0c0727;
+}
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+header{     
+    display: flex;   
+    margin: 1.5rem; 
+    padding: 1.5rem;    
+    border-radius: 0.5rem;
+    box-shadow: 0px 5px 25px  var(--azul-cielos);  
+    align-items: center;      
+    gap: 5rem;    
+    background-color: var(--azul-cielo);
+    justify-content: space-between;
+}
+nav{
+    display: flex;  
+    flex-direction: row; 
+}
+nav a{
+    font-size:large;
+    display: flex;  
+    padding: 2vh;
+    color: var(--el-mas-claro);
+    justify-content: space-between;
+    text-decoration: none;
+}
+.selection{
+    display: flex;
+    margin: 1rem;    
+    width: 50%;
+    height: 5rem;
+    background-color: var(--color5);
+    border-radius: 0.5rem;
+    box-shadow: 0px 5px 1rem ; 
+    justify-content:space-between;
+    align-content: center;   
+}
+main form{
+    display: flex;
+    flex-direction: column;
+    gap: 3vh;
+    width: 70%;
+
+}
+main form .inputContainer{
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    gap: 1vh;
+}
+main form .inputContainer input, select{
+    border: none;
+    border-bottom: 1px solid rgb(40, 39, 39);
+    padding: 10px;
+    font-size: 18px;
+}
+.btn-register{
+    padding: 1.5rem;
+    background-color: var(--azul-oscuro);
+    color: var(--el-mas-claro);
+    border: 1px solid var(--azul-oscuro);
+    padding: 10px;
+    border-radius: 5px;
+    width: 200px;
+    font-size: 18px;
+}
+.contanerUsers{
+    display: flex;
+    flex-wrap: wrap;  
+    padding-top: 1.5rem;  
+    justify-content:space-between;
+    gap: 30px
+}
+.user-card{
+    background-color:  var(--azul-oscuro);
+    color: var(--el-mas-claro);
+    padding: 10px;
+    width: 300px;
+    border-radius: 5px;
+}
+/* seccion paquetes turísticos containerPackTour*/
+.containerPackTour{
+    background-color: var(--azul-cielo);
+    border-radius: 0.5rem;
+    box-shadow: 0px 5px 1rem ;     
+    max-width: 100%;
+    margin: 1.5rem;
+
+}
+.containerPackTour h2{
+    color: var(--el-mas-claro);
+    padding: 0.75rem;
+}
+
+
+.packTour{
+    background-color: var(--azul-cielo);
+    border-radius: 0.5rem;
+    box-shadow: 0px 5px 1rem ;     
+    max-width: 100%;
+    margin: 1.5rem;
+
+}
+.packTour h2{
+    color: var(--el-mas-claro);
+    padding: 0.75rem;
+}
+
+.container-flex{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    align-content: space-between;
+}
+.container-flex cardPromo{
+    display: flex;
+    margin: 1rem;    
+    width: 50%;
+    height: 15rem;
+    background-color: var(--el-mas-claro);
+    border-radius: 0.5rem;
+    box-shadow: 0px 5px 1rem  var(--dorado);
+    border-radius: 0.5rem;
+   /* max-width: 450px;*/
+    justify-content:space-between;
+    align-content: center;    
+}
+.part-1{    
+    margin-left: 0.5rem;    
+    height: 45%;        
+}
+.part-2{
+    width: 40%;    
+    margin-left: 0.5rem;   
+    height: 45%;        
+    background-color: var(--el-mas-claro);
+}
+.part-3{
+    width: 30%;
+    height: 100%;
+    background-color: var(--azul-oscuro);
+    border-radius: 0.5rem;
+    box-shadow: 0px 5px 1rem  var(--dorado); 
+
+}
+.cardPromo h3{
+    display: flex;
+    justify-content: center;    
+}
+/*estilos de footers*/
+body {
+    text-transform: capitalize;
+}
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+
+.footer {
+    background-color: var(--azul-cielo);
+    padding: 80px;
+}
+.footer-row {
+    display: flex;
+    flex-wrap: wrap;
+}
+.footerNos {
+    width: 25%;
+    padding: 0 15px;
+}
+.footerCont {
+    width: 25%;
+    padding: 0 15px;
+
+}
+.footerLink {
+    width: 25%;
+    padding: 0 15px;
+
+}
+
+.footerNos h3 {
+    font-size: 20px;
+    color: var(--lila-fuerte);
+    margin-bottom: 25px;
+    font-weight: 500;
+    border-bottom: 2px solid var(--azul-oscuro);
+    padding-bottom: 10px;
+    display: inline-block;
+
+}
+.footerCont h3 {
+    font-size: 20px;
+    color: var(--lila-fuerte);
+    margin-bottom: 25px;
+    font-weight: 500;
+    border-bottom: 2px solid var(--azul-oscuro);
+    padding-bottom: 10px;
+    display: inline-block;
+
+}
+.footerLink h3 {
+    font-size: 20px;
+    color: var(--lila-fuerte);
+    margin-bottom: 25px;
+    font-weight: 500;
+    border-bottom: 2px solid var(--azul-oscuro);
+    padding-bottom: 10px;
+    display: inline-block;
+
+}
+.footerNos ul li {
+    font-size: 18px;
+    text-decoration: none;
+    color: var(--el-mas-claro);
+    display: block;
+    margin-bottom: 15px;
+    transition: all  .3s ease;
+}
+.footerNos ul li:hover {
+    color: var(--el-mas-claro);
+    padding-left: 6px;
+}
+.footerLink ul li a {
+    
+    font-size: 18px;
+    text-decoration: none;
+    color: var(--el-mas-claro);
+    display: block;
+    margin-bottom: 15px;
+    transition: all  .3s ease;
+}
+.sTitle {
+    font-size: 18px;
+    margin-bottom: 15px;
+    color: var(--lila-fuerte);
+}
+
+.sang {
+    font-size: 18px;
+    text-decoration: none;
+    color:var(--color2);
+    display: block;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    transition: all  .3s ease;
+}
+.sang:hover {
+    color: var(--el-mas-claro);
+    padding-left: 6px;
+}
+
+.footerLink ul li a:hover {   
+    padding-left: 6px;
+}
+.socialLink h3 {
+    margin-bottom: 15px;
+}
+.socialLink a {
+    display: inline-block;
+    min-height: 40px;
+    width: 40px;
+    /*background-color: var(--dorado);*/
+    color: var(--azul-oscuro);
+    
+    margin: 0 10px 10px 0;
+    text-align: center;
+    line-height: 40px;
+    border-radius: 50%;
+    
+    transition: all .5s ease;
+
+}
+.socialLink a:hover {
+    background-color: var(--azul-oscuro);
+    color: var(--el-mas-claro);
+}
+
+ 
+@media(max-width:991px){
+    .footer-row {
+        text-align: center;
+    }
+    .footer-link {
+        width: 100%;
+        margin-bottom: 30px;
+    }
+}
