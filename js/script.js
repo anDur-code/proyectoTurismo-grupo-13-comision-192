@@ -17,7 +17,6 @@ renderizarUsuarios = () =>{
         </div>
         `
     }
-
 }
 
 formUsers.addEventListener("submit", (event) =>{
@@ -39,18 +38,31 @@ fetch("./tourpack.json")
     .then(data =>{
         for(const pack of data){
             contenedorHTML.innerHTML+=`
-            <div class="cardPromo">
-                <h2>${pack.idPack} ${pack.ttuloDescriptivo}</h2>                
-                <img src=${pack.image} alt="imagen desl lugar a visitar" width="300px" height="200px">
-                <p>Transporte: ${pack.transporte}</p>
-                <p>Servicio: ${pack.servicioHotel}</p>
-                <p>Hotel: ${pack.hotel}</p>                
-                <p>Estado: ${pack.estado}</p>
-                <p>Precio: ${pack.precio}</p>
+            <div class="cardPromo">                
+                <div class="tituloCard">                    
+                    <h3>${pack.tituloDescriptivo}</h3>
+                    <h4>(${pack.idPack})</h4>
+                </div>
+                <div class="cuerpoCard">
+                    <div class="part-2">
+                        <img src=${pack.image} alt="imagen desl lugar a visitar" width="250px">    
+                    </div>
+                    <div class="part-31">                        
+                        <p> ${pack.transporte}</p>
+                        <p>Servicio: ${pack.servicioHotel}</p>
+                        <p>Hotel: ${pack.hotel}</p>                
+                        <p>Estado: ${pack.estado}</p>                        
+                    </div>
+                    <div class="part-32">
+                        <p>${pack.precio}</p>
+                    </div>
+                </div>
+
+                
+                
             </div>
             `
-        }
-        
+        }        
     })
 
 /*
@@ -66,8 +78,5 @@ fetch("./tourpack.json")
     "cupos": 50,
     "desde": "01/04/23",
     "hasta": "09/01/23",
-    "image": "https://riosdelplaneta.com/wp-content/uploads/2019/12/cataratas-del-iguazu-2.jpg"
-
-
-    
+    "image": "https://riosdelplaneta.com/wp-content/uploads/2019/12/cataratas-del-iguazu-2.jpg"    
     */

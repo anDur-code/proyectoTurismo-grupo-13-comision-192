@@ -96,7 +96,9 @@ main form .inputContainer input, select{
     width: 300px;
     border-radius: 5px;
 }
-/* seccion paquetes turísticos containerPackTour*/
+/* seccion paquetes turísticos containerPackTour se divide en reserva y container flex*/
+
+
 .containerPackTour{
     background-color: var(--azul-cielo);
     border-radius: 0.5rem;
@@ -106,76 +108,48 @@ main form .inputContainer input, select{
 
 }
 .containerPackTour h2{
-    color: var(--el-mas-claro);
-    padding: 0.75rem;
-}
-
-
-.packTour{
-    background-color: var(--azul-cielo);
-    border-radius: 0.5rem;
-    box-shadow: 0px 5px 1rem ;     
-    max-width: 100%;
-    margin: 1.5rem;
-
-}
-.packTour h2{
-    color: var(--el-mas-claro);
-    padding: 0.75rem;
+    color: var(--color2);
+    padding: 0.75rem;    
+    font-style: italic;    
 }
 
 .container-flex{
+    display: flex;    
+    flex-wrap: wrap;
+    justify-content: space-between;        
+    padding: 0.75rem;    
+}
+
+.cardPromo{
+    display: flex;
+    margin: 1.4rem;       
+    height: auto;    
+    width: 35rem;
+    background-color: var(--el-mas-claro);
+    border-radius: 0.5rem;
+    box-shadow: 0px 5px 1rem  var(--dorado);    
+    flex-direction: column;
+   /* max-width: 450px;*/
+    
+    
+}
+.cardPromo tituloCard{    
+    color: var(--lila-fuerte);    
+}
+.cuerpoCard{
     display: flex;
     flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: space-between;
+    margin-top: .5rem;
     align-items: center;
-    align-content: space-between;
-}
-.container-flex cardPromo{
-    display: flex;
-    margin: 1rem;    
-    width: 50%;
-    height: 15rem;
-    background-color: var(--el-mas-claro);
-    border-radius: 0.5rem;
-    box-shadow: 0px 5px 1rem  var(--dorado);
-    border-radius: 0.5rem;
-   /* max-width: 450px;*/
-    justify-content:space-between;
-    align-content: center;    
-}
-.part-1{    
-    margin-left: 0.5rem;    
-    height: 45%;        
-}
-.part-2{
-    width: 40%;    
-    margin-left: 0.5rem;   
-    height: 45%;        
-    background-color: var(--el-mas-claro);
+
 }
 .part-3{
-    width: 30%;
-    height: 100%;
+    display: flex;    
     background-color: var(--azul-oscuro);
     border-radius: 0.5rem;
     box-shadow: 0px 5px 1rem  var(--dorado); 
-
-}
-.cardPromo h3{
-    display: flex;
-    justify-content: center;    
 }
 /*estilos de footers*/
-body {
-    text-transform: capitalize;
-}
-.container {
-    max-width: 1200px;
-    margin: 0 auto;
-}
-
 
 .footer {
     background-color: var(--azul-cielo);
