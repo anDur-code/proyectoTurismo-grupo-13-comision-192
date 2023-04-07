@@ -73,7 +73,7 @@ header button:hover{
 @media (max-width: 600px) {
     /*para pantallas chicas*/
     .logo{
-        width:2vh;
+        scale: 0.50;
     }
     header .menu{
         display: none;
