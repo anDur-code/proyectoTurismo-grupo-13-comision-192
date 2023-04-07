@@ -1,64 +1,156 @@
-/*.color1 { #207cce };
-.color2 { #e6daa9 };
-.color3 { #143484 };
-.color4 { #a09c5c };
-.color5 { #d4d4ac };*/
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
 :root{
     --azul-cielo:  #207cce;
     --dorado: #a09c5c;
-    --color2:#e6daa9;
+    --claromedio: #e6daa9 ;
+    --casiblanco: #e9e5d5 ;
     --azul-oscuro: #143484;
     --el-mas-claro: #d4d4ac;
     --lila-fuerte:#0c0727;
 }
-@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
 *{
     padding: 0;
     margin: 0;
     box-sizing: border-box;
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Roboto', sans-serif;    
+    font-size: 20px;
+}
+body{
+    background-color: var(--casiblanco);
+}
+/* ------------------ header ---------------*/
+header{     
+    display: flex;    
+    justify-content:space-between;
+    align-items: center;
+    gap: 5vh;
+    background-color: var(--azul-cielo);
+    height: 20vh;
+    padding: 2vh 10%;
+    
+}
+header .logo{
+    height: 15vh;
+    width: auto;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+header .logo:hover{
+    transform: scale(1.2);
+}
+header nav{
+    display: flex;  
+    flex-direction: row;
+}
+header nav a{
+    justify-content: space-between;
+    font-size:large;
+}
+header nav a{          
+    padding: 3vh;    
+    color: var(--casiblanco);
+    text-decoration: none;            
+}
+header .nav-link:hover{
+    color: var(--lila-fuerte);
+    scale: 1.10;
+    transition: all 0.3s;
+}
+header button{
+    background-color: var(--casiblanco);
+    color: var(--azul-oscuro);
+    cursor: pointer;
+    transition: all 0.3s;
+    display: none; 
+    /*para ocultar el botón de menú cuando estoy en deskop*/ 
+}
+header button:hover{
+    background-color: var(--lila-fuerte);
+    color: var(--casiblanco);
+    scale: 1.20;       
 }
 
-header{     
-    display: flex;   
-    margin: 1.5rem; 
-    padding: 1.5rem;    
-    border-radius: 0.5rem;
-    box-shadow: 0px 5px 25px  var(--azul-cielos);  
-    align-items: center;      
-    gap: 5rem;    
+@media only screen and (max-width: 768px) {
+    /*para pantallas chicas*/
+    .logo{
+        width:2vh;
+    }
+    header .menu{
+        display: none;
+    }
+    header button{
+        display: flex;
+    }
+    .imgCard{
+        width: 15vh;
+    }
+    .cuerpoCard{
+       font-size: small;
+       flex-direction: column;
+       
+    }
+}
+  
+/*main*/
+/* seccion paquetes turísticos containerPackTour se divide en reserva y container flex*/
+
+.containerPackTour{
     background-color: var(--azul-cielo);
-    justify-content: space-between;
-}
-nav{
-    display: flex;  
-    flex-direction: row; 
-}
-nav a{
-    font-size:large;
-    display: flex;  
-    padding: 2vh;
-    color: var(--el-mas-claro);
-    justify-content: space-between;
-    text-decoration: none;
-}
-.selection{
-    display: flex;
-    margin: 1rem;    
-    width: 50%;
-    height: 5rem;
-    background-color: var(--color5);
     border-radius: 0.5rem;
-    box-shadow: 0px 5px 1rem ; 
-    justify-content:space-between;
-    align-content: center;   
+    box-shadow: 0px 5px 1vh ;     
+    max-width: 100%;
+    margin: 2.5vh;
 }
+.containerPackTour .contenedor h2{
+    color: var(--casiblanco);
+    padding: 0.25rem;    
+    font-style: italic;    
+    justify-content: center;
+    background-color: var(--azul-oscuro);
+    
+}
+
+.containerPackTour .contenedor .container-flex{
+    display: flex;    
+    flex-wrap: wrap;
+    justify-content: space-between;        
+    padding: 0.75rem;    
+}
+
+.containerPackTour .contenedor .container-flex .cardPromo{
+    display: flex;
+    margin: 1.4rem;           
+    background-color: var(--el-mas-claro);
+    border-radius: 0.5rem;
+    box-shadow: 0px 5px 1rem  var(--dorado);    
+    flex-direction: column;
+       /* max-width: 450px;*/  
+    
+}
+.containerPackTour .contenedor .container-flex .cardPromo .tituloCard{    
+    color: var(--lila-fuerte);    
+}
+.containerPackTour .contenedor .container-flex .cardPromo .cuerpoCard{
+    display: flex;
+    flex-direction: row;
+    margin: 1vh;
+    align-items: center;
+
+}
+.containerPackTour .contenedor .container-flex .cardPromo .cuerpoCard .part-3{
+    display: flex;    
+    background-color: var(--azul-oscuro);
+    border-radius: 0.5rem;
+    box-shadow: 0px 5px 1rem  var(--dorado); 
+    align-items:baseline;
+}
+
+/*form de reseñas*/
 main form{
     display: flex;
     flex-direction: column;
     gap: 3vh;
     width: 70%;
-
 }
 main form .inputContainer{
     display: flex;
@@ -96,59 +188,7 @@ main form .inputContainer input, select{
     width: 300px;
     border-radius: 5px;
 }
-/* seccion paquetes turísticos containerPackTour se divide en reserva y container flex*/
 
-
-.containerPackTour{
-    background-color: var(--azul-cielo);
-    border-radius: 0.5rem;
-    box-shadow: 0px 5px 1rem ;     
-    max-width: 100%;
-    margin: 1.5rem;
-
-}
-.containerPackTour h2{
-    color: var(--color2);
-    padding: 0.75rem;    
-    font-style: italic;    
-}
-
-.container-flex{
-    display: flex;    
-    flex-wrap: wrap;
-    justify-content: space-between;        
-    padding: 0.75rem;    
-}
-
-.cardPromo{
-    display: flex;
-    margin: 1.4rem;       
-    height: auto;    
-    width: 35rem;
-    background-color: var(--el-mas-claro);
-    border-radius: 0.5rem;
-    box-shadow: 0px 5px 1rem  var(--dorado);    
-    flex-direction: column;
-   /* max-width: 450px;*/
-    
-    
-}
-.cardPromo tituloCard{    
-    color: var(--lila-fuerte);    
-}
-.cuerpoCard{
-    display: flex;
-    flex-direction: row;
-    margin-top: .5rem;
-    align-items: center;
-
-}
-.part-3{
-    display: flex;    
-    background-color: var(--azul-oscuro);
-    border-radius: 0.5rem;
-    box-shadow: 0px 5px 1rem  var(--dorado); 
-}
 /*estilos de footers*/
 
 .footer {

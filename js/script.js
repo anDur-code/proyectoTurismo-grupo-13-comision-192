@@ -45,7 +45,7 @@ fetch("./tourpack.json")
                 </div>
                 <div class="cuerpoCard">
                     <div class="part-2">
-                        <img src=${pack.image} alt="imagen desl lugar a visitar" width="250px">    
+                        <img src=${pack.image} alt="imagen desl lugar a visitar" width="250px" class="imgCard">    
                     </div>
                     <div class="part-31">                        
                         <p> ${pack.transporte}</p>
